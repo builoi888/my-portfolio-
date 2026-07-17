@@ -1,0 +1,105 @@
+/* Reset định dạng cơ bản */
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    line-height: 1.6; 
+    background: #f8f9fa; 
+    color: #333;
+}
+
+/* Thanh điều hướng Menu */
+nav { 
+    background: #212529; 
+    padding: 1rem; 
+    text-align: center; 
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a { 
+    color: #adb5bd; 
+    margin: 0 1.5rem; 
+    text-decoration: none; 
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover, nav a.active { 
+    color: #ffffff; 
+}
+
+/* Phần đầu trang chứa thông tin nổi bật */
+header { 
+    text-align: center; 
+    padding: 5rem 2rem; 
+    background: #343a40; 
+    color: white; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    color: #ced4da;
+    font-size: 1.1rem;
+    max-width: 600px;
+}
+
+/* Style ảnh đại diện hình tròn */
+.avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #495057;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Khu vực nội dung các dự án/thông tin */
+section { 
+    padding: 4rem 2rem; 
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+section h2 {
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+section h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 3px;
+    background: #343a40;
+}
+
+.project { 
+    background: white; 
+    padding: 2rem; 
+    margin: 1.5rem 0; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
+    border-left: 5px solid #495057;
+}
+
+.project h3 {
+    margin-bottom: 0.5rem;
+}
